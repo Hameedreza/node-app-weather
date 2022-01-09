@@ -1,16 +1,16 @@
-// const forecast = require("../../src/utils/forecast");
+const forecast = require("../../src/utils/forecast");
 
 
 
-// fetch('http://localhost:3000/weather?address=boston').then( response =>{
-//   response.json().then( data =>{
-//     if(data.error){
-//       return console.log(data.error);
-//     }
-//     console.log(data.location);
-//     console.log(data.forecast);
-//   })
-// })
+fetch('/weather?address=boston').then( response =>{
+  response.json().then( data =>{
+    if(data.error){
+      return console.log(data.error);
+    }
+    console.log(data.location);
+    console.log(data.forecast);
+  })
+})
 
 
 
