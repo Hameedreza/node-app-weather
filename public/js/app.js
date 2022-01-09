@@ -1,6 +1,3 @@
-const forecast = require("../../src/utils/forecast");
-
-
 
 fetch('/weather?address=boston').then( response =>{
   response.json().then( data =>{
