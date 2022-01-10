@@ -65,7 +65,7 @@ footer {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: cornflowerblue;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   border-radius: 5rem;
 }
 
@@ -74,6 +74,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 input {
@@ -86,7 +87,7 @@ input {
   font-size: 2rem;
 }
 
-input::placeholder{
+input::placeholder {
   text-align: center;
 }
 
@@ -98,9 +99,8 @@ button {
   color: #fff;
   border: none;
   transition: all 0.5s;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
-
 }
 
 input:focus {
@@ -114,6 +114,28 @@ button:focus {
   outline: cornflowerblue;
 }
 
-button:active{
-  transform: scale(.9);
+button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1rem;
+    margin: 3rem 0.5rem;
+  }
+  .title {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  input {
+    padding: 0.5rem 0;
+    width: 15rem;
+    font-size: 1rem;
+  }
+  footer{
+    font-size: .5rem;
+  }
 }
